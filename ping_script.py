@@ -1,3 +1,7 @@
+# This script is the ping a list of host in a CIDR Block.
+# This script was made to work on a Mac or Linux based system.
+# Credit for this script goes to Rocky Seay.
+
 import ipaddress
 import subprocess
 
@@ -12,3 +16,5 @@ for i in subnet.hosts():
         alive.append(i)
 for ip in alive:
     print(ip + " is alive".upper())
+
+input()
