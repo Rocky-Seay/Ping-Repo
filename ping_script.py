@@ -1,5 +1,6 @@
 import ipaddress
 import subprocess
+import requests
 
 alive = []
 subnet = ipaddress.ip_network(
